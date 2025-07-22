@@ -1,10 +1,13 @@
+/* High-end cute script fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&family=Kaushan+Script&family=Pacifico&family=Sacramento&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom 2000s retro styles */
 body {
-  font-family: Impact, "Arial Black", "Franklin Gothic Bold", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
   background: linear-gradient(45deg, #FFB6C1, #DDA0DD, #87CEEB);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;

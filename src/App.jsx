@@ -94,7 +94,7 @@ export default function CozyCorner() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-hot-pink via-barbie-pink to-princess-purple text-gray-800 font-comic p-4 relative overflow-hidden"
+    <div className="min-h-screen bg-gradient-to-br from-hot-pink via-barbie-pink to-princess-purple text-gray-800 p-4 relative overflow-hidden"
          style={{
            background: 'linear-gradient(45deg, #FF1493, #FF69B4, #FFB3DE, #DA70D6, #FF1493)',
            backgroundSize: '400% 400%',
@@ -535,13 +535,13 @@ export default function CozyCorner() {
 
         {/* Retro TV Frame - 90s/00s Cartoons */}
         <div className="bg-white p-4 rounded-2xl shadow-lg border-4 border-white sparkle">
-          <h2 className="text-xl font-bold mb-2">📺 The Nostalgia Channel</h2>
+          <h2 className="text-xl font-bold mb-2">📺 Nostalgia TV</h2>
           
           {/* Vintage TV Frame */}
           <div className="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-3xl border-8 border-gray-700 shadow-2xl relative">
             {/* TV Brand Label */}
             <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-gray-600 px-3 py-1 rounded-full">
-              <span className="text-white font-bold text-xs">SONY TRINITRON</span>
+              <span className="text-white font-bold text-xs">TV</span>
             </div>
             
             {/* TV Screen */}
@@ -588,7 +588,7 @@ export default function CozyCorner() {
 
         {/* Reddit Preview - r/webkinz */}
         <div className="bg-white p-4 rounded-2xl shadow-lg border-4 border-white sparkle">
-          <h2 className="text-xl font-bold mb-2">� Webkinz World</h2>
+          <h2 className="text-xl font-bold mb-2">💬 Reddit Communities</h2>
           
           <div className="space-y-4">
             {/* Webkinz Bubble */}
@@ -690,11 +690,6 @@ export default function CozyCorner() {
             onLoad={() => console.log(`Successfully loaded: Stinky${petFrame}.png`)}
             title="Stinky the Cat - Morgan's beautiful animation!"
           />
-        </div>
-        
-        {/* Simple Description */}
-        <div className="text-center text-xs text-pink-600 mt-2">
-          <span className="font-medium">Morgan's custom animation! 🎨</span>
         </div>
       </div>
 

@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         'comic': ['Comic Sans MS', 'cursive'],
         'retro': ['Courier New', 'monospace'],
+        'morgan': ['Impact', 'Arial Black', 'Franklin Gothic Bold', 'Trebuchet MS', 'Helvetica', 'Arial', 'sans-serif'],
+        'cute': ['Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Arial', 'sans-serif'],
+        'cursive': ['"Brush Script MT"', '"Lucida Handwriting"', '"Dancing Script"', '"Pacifico"', 'cursive'],
+        'elegant': ['"Great Vibes"', '"Dancing Script"', '"Pacifico"', '"Brush Script MT"', 'cursive'],
       },
       colors: {
         'retro-pink': '#FFB6C1',
