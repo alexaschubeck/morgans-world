@@ -143,7 +143,7 @@ export default function CozyCorner() {
           {/* Custom Bratz Font Title */}
           <div className="relative mb-3 px-8 py-4 transform hover:scale-105 transition-all duration-300">
             <img 
-              src="./MorgiesWorldTitle.png" 
+              src={`${import.meta.env.BASE_URL}MorgiesWorldTitle.png`} 
               alt="MORGAN'S WORLD" 
               className="h-16 md:h-20 mx-auto drop-shadow-2xl filter brightness-110"
               style={{
@@ -679,15 +679,15 @@ export default function CozyCorner() {
         {/* Stinky Animation Display */}
         <div className="flex items-center justify-center h-16">
           <img
-            src={`./stinky/Stinky${petFrame}.png`}
+            src={`${import.meta.env.BASE_URL}stinky/Stinky${petFrame}.png`}
             alt="Stinky the Cat"
             className="w-16 h-16 object-contain pixel-art drop-shadow-md"
             onError={(e) => {
-              console.log(`Failed to load: ./stinky/Stinky${petFrame}.png`);
+              console.log(`Failed to load: Stinky${petFrame}.png`);
               e.target.style.display = 'none';
               e.target.parentElement.innerHTML = `<div class="text-4xl animate-bounce">🐱</div>`;
             }}
-            onLoad={() => console.log(`Successfully loaded: ./stinky/Stinky${petFrame}.png`)}
+            onLoad={() => console.log(`Successfully loaded: Stinky${petFrame}.png`)}
             title="Stinky the Cat - Morgan's beautiful animation!"
           />
         </div>
