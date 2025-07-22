@@ -726,11 +726,6 @@ export default function CozyCorner() {
           }
         }
         
-        /* Blingy Pink Traditional Cursor */
-        * {
-          cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><filter id="glow"><feGaussianBlur stdDeviation="2" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feGaussianBlur></filter><linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23FF69B4;stop-opacity:1" /><stop offset="50%" style="stop-color:%23FF1493;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFB6C1;stop-opacity:1" /></linearGradient></defs><path d="M2 2 L2 20 L8 14 L12 18 L14 16 L10 12 L16 12 Z" fill="url(%23pinkGrad)" stroke="white" stroke-width="1" filter="url(%23glow)"/></svg>') 4 4, auto !important;
-        }
-        
         .blocky-cursor {
           position: fixed;
           width: 20px;
@@ -763,19 +758,6 @@ export default function CozyCorner() {
             transform: scale(1.2) rotate(360deg);
             opacity: 1;
           }
-        }
-        
-        /* Enhanced cursor for interactive elements */
-        button:hover {
-          cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><filter id="glowHover"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feGaussianBlur></filter><linearGradient id="pinkGradHover" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23FF1493;stop-opacity:1" /><stop offset="33%" style="stop-color:%23FF69B4;stop-opacity:1" /><stop offset="66%" style="stop-color:%23FFB6C1;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFC0CB;stop-opacity:1" /></linearGradient></defs><path d="M2 2 L2 22 L10 16 L14 20 L16 18 L12 14 L20 14 Z" fill="url(%23pinkGradHover)" stroke="white" stroke-width="2" filter="url(%23glowHover)"/></svg>') 4 4, pointer !important;
-        }
-        
-        a:hover {
-          cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><filter id="glowHover"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feGaussianBlur></filter><linearGradient id="pinkGradHover" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23FF1493;stop-opacity:1" /><stop offset="33%" style="stop-color:%23FF69B4;stop-opacity:1" /><stop offset="66%" style="stop-color:%23FFB6C1;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FFC0CB;stop-opacity:1" /></linearGradient></defs><path d="M2 2 L2 22 L10 16 L14 20 L16 18 L12 14 L20 14 Z" fill="url(%23pinkGradHover)" stroke="white" stroke-width="2" filter="url(%23glowHover)"/></svg>') 4 4, pointer !important;
-        }
-        
-        canvas:hover {
-          cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><filter id="glowPaint"><feGaussianBlur stdDeviation="2" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feGaussianBlur></filter></defs><circle cx="12" cy="12" r="8" fill="%23FF69B4" stroke="white" stroke-width="2" filter="url(%23glowPaint)"/><circle cx="12" cy="12" r="4" fill="%23FF1493"/></svg>') 12 12, crosshair !important;
         }
       `}</style>
     </div>
