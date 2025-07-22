@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/morgans-world/',
+  // Temporarily remove base path to test
+  // base: '/morgans-world/',
 })

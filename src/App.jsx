@@ -1,15 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-// Import images as modules - this is the most reliable way for Vite
-import morgiesTitle from './assets/MorgiesWorldTitle.png';
-import stinky0 from './assets/stinky/Stinky0.png';
-import stinky1 from './assets/stinky/Stinky1.png';
-import stinky2 from './assets/stinky/Stinky2.png';
-import stinky3 from './assets/stinky/Stinky3.png';
-import stinky4 from './assets/stinky/Stinky4.png';
-import stinky5 from './assets/stinky/Stinky5.png';
-
 export default function CozyCorner() {
   const [note, setNote] = useState("You are my favorite person in the wholeeeee world 💌");
   const [petFrame, setPetFrame] = useState(0);
@@ -18,9 +9,6 @@ export default function CozyCorner() {
   const [paintColor, setPaintColor] = useState('#000000');
   const [brushSize, setBrushSize] = useState(3);
   const [paintTool, setPaintTool] = useState('brush'); // brush, eraser, fill
-
-  // Array of imported Stinky images
-  const stinkyImages = [stinky0, stinky1, stinky2, stinky3, stinky4, stinky5];
 
   const restaurantDeals = [
     {
@@ -155,7 +143,7 @@ export default function CozyCorner() {
           {/* Custom Bratz Font Title */}
           <div className="relative mb-3 px-8 py-4 transform hover:scale-105 transition-all duration-300">
             <img 
-              src={morgiesTitle} 
+              src="MorgiesWorldTitle.png" 
               alt="MORGAN'S WORLD" 
               className="h-16 md:h-20 mx-auto drop-shadow-2xl filter brightness-110"
               style={{
@@ -691,7 +679,7 @@ export default function CozyCorner() {
         {/* Stinky Animation Display */}
         <div className="flex items-center justify-center h-16">
           <img
-            src={stinkyImages[petFrame]}
+            src={`stinky/Stinky${petFrame}.png`}
             alt="Stinky the Cat"
             className="w-16 h-16 object-contain pixel-art drop-shadow-md"
             onError={(e) => {
